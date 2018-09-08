@@ -1,7 +1,65 @@
+#header {
+    border-bottom: 1px solid #eee;
+    .logo {
+        margin: 0;
+        padding: 0;
+        min-width: 100px;
+        line-height: 0;
+        a {
+            display: inline-block;
+            max-width: 100%;
+        }
+        img {
+            display: none;
+            color: transparent;
+            max-width: 100%;
+        }
+        .standard-logo {
+            display: inline-block;
+        }
+    }
+    &.sticky-header {
+        .logo {
+            .sticky-logo {
+                display: inline-block;
+            }
+        }
+        .sticky-logo~img {
+            display: none;
+        }
+    }
+    .nav > li.menu-item > a {
+        font-family: $font-family-base;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0px;
+        color: #0088cc;
+        padding: 9px 12px 8px 12px;
+        &:hover {
+            background: #0088cc;
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+    @media not all,
+    only screen and (min-resolution: 144dpi),
+    only screen and (min-resolution: 1.5dppx) {
+        .logo .standard-logo,
+        &.sticky-header .logo .sticky-logo {
+            display: none;
+        }
+        .logo .retina-logo,
+        &.sticky-header .logo .sticky-retina-logo {
+            display: inline-block;
+        }
+    }
+}
+
 .banner .nav li {
-  @extend .nav-item;
+    @extend .nav-item;
 }
 
 .banner .nav a {
-  @extend .nav-link;
+    @extend .nav-link;
 }
