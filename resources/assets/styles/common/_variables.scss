@@ -1,10 +1,8 @@
 /** Import Bootstrap functions */
 @import "~bootstrap/scss/functions";
 
-$theme-colors: (
-  primary: #525ddc
-);
-
 $container-fluid-padding: 60px;
-
 $font-family-base: 'Open Sans', sans-serif;
+
+$link-color:        #0088cc;
+$link-hover-color:  #0088cc;
