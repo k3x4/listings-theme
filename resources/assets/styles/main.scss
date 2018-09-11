@@ -3,6 +3,9 @@
 /** Import everything from autoload */
 @import 'autoload/bootstrap';
 
+@import "~owl.carousel/src/scss/owl.carousel";
+@import "~owl.carousel/src/scss/owl.theme.default";
+
 /**
  * Import npm dependencies
  *

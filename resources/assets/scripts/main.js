@@ -1,5 +1,6 @@
 // import external dependencies
 import 'jquery';
+import 'owl.carousel/dist/owl.carousel.min';
 
 // Import everything from autoload
 import "./autoload/_bootstrap.js";

@@ -1,6 +1,10 @@
-.widget ul, .widget ol {
-    list-style: none;
-    padding: 0;
+.widget{
+    margin-bottom: 50px;
+    ul,
+    ol {
+        list-style: none;
+        padding: 0;
+    }
 }
 
 .widget>div>ul>li:first-child, .widget>ul>li:first-child {
