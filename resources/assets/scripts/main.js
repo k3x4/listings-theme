@@ -11,6 +11,8 @@ import common from './routes/common';
 import home from './routes/home';
 import aboutUs from './routes/about';
 
+import singleListing from './routes/single-listing';
+
 /** Populate Router instance with DOM routes */
 const routes = new Router({
   // All pages
@@ -19,6 +21,8 @@ const routes = new Router({
   home,
   // About Us page, note the change from about-us to aboutUs.
   aboutUs,
+
+  singleListing,
 });
 
 // Load Events

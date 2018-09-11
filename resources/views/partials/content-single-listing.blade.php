@@ -5,10 +5,9 @@
     </header>
     <div class="entry-content">
         @if ($gallery)
-        @php var_dump($gallery) @endphp
             <div class="thumb-gallery">
                 <div class="owl-carousel owl-theme manual thumb-gallery-detail show-nav-hover" id="thumbGalleryDetail">
-                    @foreach ($gallery as $image)
+                    @foreach ($gallery['images'] as $image)
                         <div>
                             <span class="img-thumbnail d-block">
                                 <span class="v-helper"></span><img src="{{ $image }}" class="img-fluid">
@@ -17,7 +16,7 @@
                     @endforeach
                 </div>
                 <div class="owl-carousel owl-theme manual thumb-gallery-thumbs mt" id="thumbGalleryThumbs">
-                    @foreach ($gallery as $image)
+                    @foreach ($gallery['thumbs'] as $image)
                         <div>
                             <span class="img-thumbnail d-block cur-pointer">
                                 <img src="{{ $image }}" class="img-fluid">
